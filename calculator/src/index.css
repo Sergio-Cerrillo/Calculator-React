@@ -1,0 +1,149 @@
+
+body {
+  background-color: black;
+  margin: 0;
+  place-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.calculator{
+  width: 500px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #333;
+  font-size:1.2rem;
+}
+.display{
+  background-color: white;
+  border: 1px solid black;
+  height:70px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 50px;
+  border-radius: 5px;
+}
+.input-op{
+  text-align: right;
+  font-size: 40%;
+  color: lightslategray;
+}
+.input-res{
+  text-align:center;
+  font-size:80%;  
+}
+.button-clear{
+  width:100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: red;
+  color: black;
+  border-radius: 10px;
+  transition-duration: 400ms;
+}
+.button-clear:hover{
+  background-color: black;
+  color:red;
+  box-shadow: 0px 0px 50px red;
+}
+button{
+  border-radius: 5px;
+  background-color: white;
+}
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 4 columnas */
+  grid-template-rows: repeat(9, 1fr);    /* 4 filas (puedes ajustar según necesites) */
+  gap: 10px; /* Espacio entre botones */
+  height: 300px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.button-sum{
+  grid-column-start: 1;
+  grid-column-end:3 ;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+.button-sub{
+  grid-column-start:3;
+  grid-column-end:5;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+.button-mult{
+  grid-column-start:5;
+  grid-column-end:7;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+.button-div{
+  grid-column-start:7;
+  grid-column-end:9;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+.button-1{
+  grid-column-start: 2;
+  grid-column-end:4 ;
+  grid-row-start:2;
+  grid-row-end:4;
+}.button-2{
+  grid-column-start: 4;
+  grid-column-end:6 ;
+  grid-row-start:2;
+  grid-row-end:4;
+}
+.button-3{
+  grid-column-start: 6;
+  grid-column-end:8 ;
+  grid-row-start:2;
+  grid-row-end:4;
+}
+.button-4{
+  grid-column-start: 2;
+  grid-column-end:4 ;
+  grid-row-start:4;
+  grid-row-end:6;
+}
+.button-5{
+  grid-column-start: 4;
+  grid-column-end:6 ;
+  grid-row-start:4;
+  grid-row-end:6;
+}
+.button-6{
+  grid-column-start: 6;
+  grid-column-end:8 ;
+  grid-row-start:4;
+  grid-row-end:6;
+}
+.button-7{
+  grid-column-start: 2;
+  grid-column-end:4 ;
+  grid-row-start:6;
+  grid-row-end:8;
+}
+.button-8{
+  grid-column-start: 4;
+  grid-column-end:6 ;
+  grid-row-start:6;
+  grid-row-end:8;
+}
+.button-9{
+  grid-column-start: 6;
+  grid-column-end:8 ;
+  grid-row-start:6;
+  grid-row-end:8;
+}
+.button-0{
+  grid-column-start: 2;
+  grid-column-end:4 ;
+  grid-row-start:8;
+  grid-row-end:10;
+}
+.button-result{
+  grid-column-start: 4;
+  grid-column-end:8 ;
+  grid-row-start:8;
+  grid-row-end:10;
+}
